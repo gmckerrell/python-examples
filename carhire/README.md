@@ -49,4 +49,4 @@ You can also query the web service yourself from a browser.
 # Simple javascript retrieval
 
 
-[`http://localhost:5000/static/carhire.html](http://localhost:5000/static/carhire.html)
+[`http://localhost:5000/static/carhire.html`](http://localhost:5000/static/carhire.html)
