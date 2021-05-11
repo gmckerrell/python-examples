@@ -23,11 +23,11 @@ def getNextValue(n):
         return int(n / 2)
 
 def collatz(value):
-   """
-   This function returns a collatz sequence for a given number
+    """
+    This function returns a collatz sequence for a given number
    
-   value - the number to evaluate
-   """
+    value - the number to evaluate
+    """
     sequence = [value]
     n = value
     while(True):
@@ -37,17 +37,23 @@ def collatz(value):
             break
     return sequence
 
+def getLargest(maxValue):
+    """
+    This function will return the largest sequence less than the given maximum.
+
+    maxValue - the maximum value to test
+    """
+    largest = []
+    for i in range(1, maxValue):
+        result = collatz(i)
+        if len(result) > len(largest):
+            largest = result
+    return largest
+
 # test some values
 for i in (10,78,231,1897):
     print(collatz(i))
 
-# get the largest sequence under 1,000,000
-# NB. this will take a while :-)
-largest = []
-for i in range(1, 1000000):
-    result = collatz(i)
-    if len(result) > len(largest):
-        largest = result
-
+# find largest sequence
+largest = getLargest(10000)
 print(f"LARGEST:  ({len(largest)} entries)\n{largest}")
-
