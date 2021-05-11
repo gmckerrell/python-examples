@@ -12,7 +12,8 @@
 def getNextValue(n):
     """
     This function returns the next integer in a Collatz sequence
-    n - the current value
+    
+    n - the current number
     """
     if (n % 2):
         # odd number
@@ -24,7 +25,8 @@ def getNextValue(n):
 def collatz(value):
    """
    This function returns a collatz sequence for a given number
-   n - the number to evaluate
+   
+   value - the number to evaluate
    """
     sequence = [value]
     n = value
