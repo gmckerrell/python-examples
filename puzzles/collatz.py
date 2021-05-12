@@ -9,7 +9,7 @@
 #
 # Bonus: What input n <= 1000000 gives the longest sequence?
 
-def getNextValue(n):
+def _getNextValue(n):
     """
     This function returns the next integer in a Collatz sequence
     
@@ -31,7 +31,7 @@ def collatz(value):
     sequence = [value]
     n = value
     while(True):
-        n = getNextValue(n)
+        n = _getNextValue(n)
         sequence.append(n)
         if n == 1:
             break
