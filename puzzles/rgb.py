@@ -52,15 +52,6 @@ if __name__ == '__main__':
             rgb(values)
             self.assertEqual(values, expected)
 
-        def _gen_random_values(self, size):
-            values = []
-            choices = "RGB"
-            for i in range(0, size):
-                values.append(
-                    random.choice(choices)
-                )
-            return values
-            
         def test_example(self):
             self._check_values("GBRRBRG", "RRRGGBB")
 
@@ -68,7 +59,7 @@ if __name__ == '__main__':
             print()
             random.seed("12345") # make this reproducible
             for size in (10, 100, 1000, 10000, 100000):
-                values = self._gen_random_values(size)
+                values = random.choices("RGB", k = size)
                 start = time.perf_counter()
                 rgb(values)
                 end = time.perf_counter()
