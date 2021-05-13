@@ -73,6 +73,6 @@ if __name__ == '__main__':
                 rgb(values)
                 end = time.perf_counter()
                 delta = (end - start) * 1000
-                print(f"{size:10}: {delta:0.3f} ms [{delta/size:0.6f} ms/value]")
+                print(f"{size:10}: {delta:0.2f} ms [{delta/size:0.3f} ms/value]")
             
     unittest.main()
