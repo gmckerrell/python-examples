@@ -45,6 +45,7 @@ if __name__ == '__main__':
 
         def test_timings(self):
             print()
+            random.seed("12345") # make this reproducible
             for size in (10, 100, 1000, 10000, 100000):
                 values = self._gen_random_values(size)
                 start = time.perf_counter()
