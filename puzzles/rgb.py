@@ -62,6 +62,9 @@ if __name__ == '__main__':
         def test_start_with_red(self):
             self._check_values("RGBRRBRG", "RRRRGGBB")
 
+        def test_start_with_blue(self):
+            self._check_values("BGBRRBRG", "RRRGGBBB")
+
         def test_end_with_red(self):
             self._check_values("GBRRBRGR", "RRRRGGBB")
 
@@ -77,6 +80,6 @@ if __name__ == '__main__':
                 rgb(values)
                 end = time.perf_counter()
                 delta = (end - start) * 1000
-                print(f"{size:10}: {delta:0.2f} ms [{1000 * delta/size:0.4f} us/value]")
+                print(f"{size:10} - {delta:0.2f} ms [{1000 * delta/size:0.4f} us/value]")
             
     unittest.main()
