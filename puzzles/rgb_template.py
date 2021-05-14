@@ -19,7 +19,7 @@ def rgb(values):
 
     values - the array to manipulate
     """
-    []
+    return []
 
 if __name__ == '__main__':
     import unittest
