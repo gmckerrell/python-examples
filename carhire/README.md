@@ -39,7 +39,8 @@ The server code provides a RESTful web service for the access and manipulation o
 `$ python -m pip install flask_restful`
 
 This installs the python packages that the [`server/server.py`](server/server.py) code uses to provide the web service.
-### usage
+
+### Usage
 ```
 $ python server.py
  * Serving Flask app 'server'
@@ -57,7 +58,7 @@ The client code provides similar functions as the db interface, but the implemen
 ### Prerequisites
 `$ python -m pip install requests`
 
-### usage 
+### Usage 
 ```
 $ cd client
 $ python client.py
