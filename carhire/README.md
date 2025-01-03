@@ -29,7 +29,7 @@ findByCustomer
 {'id': 1, 'customer': 'Fred Flintstone', 'start_date': '11-09-2020', 'end_date': '12-09-2020', 'manufacturer': 'BMW', 'model': 'mini', 'people': 4, 'luggage': 2, 'registration': 'M1N1 2'}
 $
 ```
-_Running this python module by itself will drop, create and fill out some default values for the database._
+_Running this python module by itself will drop, create and fill out some default values for the database, and then run some simple queries_
 
 ## Server
 The server code provides a RESTful web service for the access and manipulation of the resources associated with the carhire database.
